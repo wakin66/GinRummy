@@ -1,9 +1,9 @@
 class Card
 
-    attr_reader :name, :suit, :value, :points
+    attr_reader :symbol, :suit, :value, :points
 
     def initialize(suit,value)
-        @name = "#{suit}#{value}"
+        @symbol = "#{value}#{suit}"
         @suit = suit
         @value = value
         @points = get_points
