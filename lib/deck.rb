@@ -5,6 +5,7 @@ class Deck
     def initialize
         @cards = Array.new
         fill_deck
+        shuffle
     end
 
     def draw_card
