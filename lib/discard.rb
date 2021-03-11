@@ -1,6 +1,6 @@
 class Discard
 
-    def initialzie
+    def initialize
         @cards = Array.new
     end
 
@@ -13,7 +13,7 @@ class Discard
     end
 
     def display
-        cards.last.value
+        return cards.last.symbol
     end
 
     private
