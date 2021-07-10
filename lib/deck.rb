@@ -16,6 +16,11 @@ class Deck
         @cards.shuffle!
     end
 
+    def reshuffle(discard)
+        @cards = discard
+        shuffle
+    end
+
     private
 
     attr_reader :cards
