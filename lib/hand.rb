@@ -27,7 +27,7 @@ class Hand
     end
 
     def gin?
-        (return false) if !cards.include?[10,11]
+        (return false) if ![10,11].include?cards.length
         deadwood.length == 1 ? (return true) : (return false)
     end
 
